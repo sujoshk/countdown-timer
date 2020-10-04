@@ -16,7 +16,10 @@ const completeBtn = document.getElementById('complete-button');
 
 let countdownTitle = '';
 let countdownDate = '';
-let countdownValue = Date;
+
+// new Date returns an object with the current date and only Date returns a function
+
+let countdownValue = new Date;
 let countdownActive;
 let savedCountdown;
 
